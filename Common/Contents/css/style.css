@@ -1,0 +1,35 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    height: 100%;
+    margin:0 0 100px;
+}
+
+.centered{
+    padding: 25px;
+    width:80%;
+    margin-top: 100px;
+    margin-bottom: 6%;
+}
+
+.inputlabel {
+    font-size:18px;
+    color:azure;
+    font-weight: 700;
+}
+
+.mainDiv{
+    padding: 20px;
+    min-height: 100%;
+    margin: 150px auto 150px auto;
+}
+footer{
+    padding:5px;
+    position: fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    text-align: center;
+}

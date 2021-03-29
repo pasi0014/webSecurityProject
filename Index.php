@@ -1,10 +1,8 @@
 <?php
 include ("Common/Header.php");
-include ("Common/Functions.php");
-$pdo = getPDO();
-
 
 ?>
+
 
 <div class="container">
     <h1 class="display-3 text-center mt-5">Welcome</h1>
