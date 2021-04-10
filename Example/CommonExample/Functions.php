@@ -33,9 +33,13 @@ function ValidateUserName($userName) : string
 {
     return (empty($userName)) ? "Username is required" : "";
 }
+//Validate Phone Number
+function ValidatePhoneNumber($phone) : string {
+    return (empty($phone)) ? "Phone number is required" : "";
+}
 //Validate First Name
 function ValidateFirstName($name) : string {
-    return (empty($userName)) ? "First Name is required" : "";
+    return (empty($name)) ? "First Name is required" : "";
 }
 //Validate Last Name
 function ValidateLastName($name) : string {

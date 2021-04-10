@@ -11,6 +11,11 @@ if(!isset($_SESSION["user"]))
 }else{
     $user = $_SESSION["user"];
 }
+
+if(isset($_POST['logout'])){
+    $user = '';
+    header("Location:Login.php");
+}
 ?>
 
 <div class="container">
@@ -22,10 +27,12 @@ if(!isset($_SESSION["user"]))
                             <div class="d-flex flex-column align-items-center text-center">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Admin" class="rounded-circle" width="150">
                                 <div class="mt-3">
+                                    <form method="post">
                                     <h4><?php echo $user->getFullName();?></h4>
                                     <p class="text-secondary mb-1">Full Stack Developer</p>
-                                    <button class="btn btn-primary">Follow</button>
-                                    <button class="btn btn-outline-primary">Message</button>
+                                    <button class="btn btn-primary">Settings</button>
+                                    <button class="btn btn-outline-danger" name="logout">Log out</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
