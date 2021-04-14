@@ -74,7 +74,7 @@ function getPDO() : PDO
 /*
  * @param string
  *
- * @return User object or 0
+ * @return User object or null
  * */
 function getUserByUserName($userName)
 {
@@ -112,6 +112,8 @@ function addNewUser($userName, $firstName, $lastName, $email, $pass, $phone) : b
 }
 
 /*
+ * Not Safe
+ * 
  * @param string
  *
  * @return User object or 0

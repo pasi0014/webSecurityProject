@@ -127,6 +127,7 @@ function getUserByIdAndPassword($userName, $password)
     $pdo = getPDO();
     $userName = htmlspecialchars($userName);
     $password = htmlspecialchars($password);
+
     $sql = "SELECT * FROM users WHERE username = :userName AND password = :password";
 
     $resultSet = $pdo->prepare($sql);
@@ -149,6 +150,4 @@ function getUserByIdAndPassword($userName, $password)
         $row['email']
     ) : null;
 }
-
-
 
